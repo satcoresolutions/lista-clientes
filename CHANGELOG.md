@@ -26,7 +26,36 @@ El formato sigue una estructura basada en versiones y categorías de cambios.
 
 ### Security
 
--
+- ***
+
+## [1.2.0] - 2026-10-23
+
+### Added
+
+- Incorporación del componente `ClientManager` para centralizar la gestión de clientes y separar la lógica de la página principal.
+- Organización de la página principal (`app/page.tsx`) para mantener una estructura limpia, enfocada en la presentación y composición de componentes.
+
+### Changed
+
+- Actualización de los estilos de la interfaz para utilizar las clases y los tokens compartidos definidos en `ui.ts`.
+- Unificación de los estilos de botones, campos de formulario, filtros, notificaciones y estados visuales con el sistema de diseño de SatCore Solutions.
+- Actualización de la configuración SEO para identificar correctamente la aplicación como Lista de clientes.
+- Revisión de las descripciones y palabras clave SEO para orientarlas a la gestión de clientes y los seguimientos comerciales.
+- Mantenimiento de la identidad visual de SatCore Solutions y del color principal de marca.
+
+### Fixed
+
+- Corrección de la URL predeterminada del sitio en la configuración SEO, sustituyendo la cadena con formato Markdown por una URL válida.
+- Corrección de referencias de estilos heredados para adaptarlas a los tokens compartidos de la interfaz.
+
+### Removed
+
+- Eliminación de la lógica de gestión de clientes de `app/page.tsx` tras su traslado a `ClientManager`.
+- Eliminación de referencias a las clases de interfaz antiguas que fueron reemplazadas por las utilidades compartidas.
+
+### Security
+
+- Sin cambios de seguridad específicos en esta versión.
 
 ---
 
